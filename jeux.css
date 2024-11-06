@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    
+    
+     width: 300px;
+     border-radius: 20px;
+     
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+
+.card .photoo {
+    display: none; 
+}
+
+.card .photoo:first-child {
+    display: flex; 
+    
+}
+
+
+
+.photoo{
+    
+    height: 450px;
+    background: url(profil-ind.jpeg);
+    
+    border-radius: 30px;
+    display: flex;
+    
+    margin-top: 20px;
+    align-items: flex-end;
+    
+    
+}
+
+.title{
+   
+    color: white;
+   padding-left: 10px;
+   padding-bottom: 20px;
+   
+}
+.icone{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding-bottom: 20px;
+}
+.photo-name{
+   DISPLAY: flex;
+    GAP: 20PX;
+    FONT-FAMILY: math;
+    FONT-SIZE: small;
+}
+
+
+.pic-bio {
+    
+    FONT-FAMILY: math;
+}
+.bouton{
+    border-radius: 50%;
+    background-color: white;
+    border-color: #ffffff00;
+}
