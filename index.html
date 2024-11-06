@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+    <style>
+        
+  
+    </style>
+    
+</head>
+<body>
+    
+    <div class="mt-5 mx-3  ">
+        <div class="row justify-content-end">
+           
+            <div class="col-4 ">
+                <input class="search w-100" type="search" placeholder="Search..."  >
+                
+            </div> 
+            <div class="col-2">
+                <button  class="btn btn-primary w-100 btn-zoom " onclick="affichercnt()" id="add-button"> Add Task+</button>
+            </div>
+           
+            
+        </div>
+    </div>          
+    <div >
+        <form id="task-form" >   
+        <div id="heden" class="modal "  >
+            <div class="modal-content" id="modal">
+                <div >
+                   <div>
+                        <h3 class="text-white">title</h3>
+                        <input id="title" type="text" class="w-100 ">
+                    </div>
+                    <div>
+                        <h3 class="text-white" >description</h3>
+                        <textarea id="description" rows="5" cols="20" class="w-100 "></textarea>
+                    </div>
+                    <div>
+                        <h3 class="text-white" >date</h3>
+                        <input id="date" type="date" class="w-100 ">
+                    </div>
+                    <div>
+                        <h3 class="text-white">status</h3>
+                        <select id="status" class="w-100 ">
+                            <option value="todo">To do</option>
+                            <option value="doing">Doing</option>
+                            <option value="done">Done</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3 class="text-white">type</h3>
+                        <select id="type" class="w-100 ">
+                            <option id="P1">P1</option>
+                            <option id="P2">P2</option>
+                            <option id="P3">P3</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class=" col-2 btn btn-primary float-end btn-zoom ">submit</button>
+                    <button type="button" class="col-2 btn btn-warning float-end btn-zoom" id="exit-button">Exit</button>
+
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </form>
+
+    </div>   
+     
+    <section class="d-grid mt-5">
+        <div class="col  ">
+            <h2 class="ligne1 text-white offset-2">To do <span  id="todo-conteur">0</span> </h2> 
+            <div id="todo" class="offset-2 " >
+                <div style="display: none;" >
+                    <div  class="col bg-white offset-2 " >
+                        <div class="p-3 mt-3" id="contenu" >
+                            <h3></h3>
+                            <p></p>
+                            <p></p>
+                            <button type="button" class="btn btn-success  mt-2 edit-contenu " >Edit</button>
+                            <button  type="button" class="btn btn-warning mt-2 delet-contenu" >Delete</button>
+                        </div>
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div  class="col ">
+            <h2 class="ligne2 text-white" > doing <span id="doing-conteur">0</span></h2>
+            
+            <div id="doing"  >
+                <div style="display: none;" >
+                    <div  class="col  div bg-white">
+                        <div class="p-3 mt-3">
+                            <p></p>
+                            <p></p>
+                            <button class="btn btn-success  mt-2 edit-contenu"  >Edit</button>
+                            <button  class="btn btn-warning mt-2 delet-contenu" >Delete</button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>    
+           
+        </div>    
+
+            
+            
+            
+
+        
+        <div  style="margin-right: 70px;">
+            <h2 class="ligne3 text-white" >done <span  id="done-conteur">0</span></h2> 
+            <div id="done">
+                <div style="display: none;">
+                <div  class="col  div bg-white">
+                    <div class="p-3 mt-3">
+                        <p></p>
+                        <p></p>
+                        <button class="btn btn-success  mt-2 edit-contenu" >Edit</button>
+                        <button  class="btn btn-warning mt-2 delet-contenu" >Delete</button>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+            
+        
+        </div>
+    </section>
+
+
+    
+   
+    <script src="script.js"></script>
+</body>
+</html>
